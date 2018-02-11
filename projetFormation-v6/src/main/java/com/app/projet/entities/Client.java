@@ -1,21 +1,15 @@
 package com.app.projet.entities;
 
-import com.fasterxml.jackson.annotation.JsonBackReference;
-import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonManagedReference;
 
 import javax.persistence.*;
-
-import java.io.Serializable;
-import java.util.ArrayList;
 import java.util.Date;
-import java.util.List;
 
 @SuppressWarnings("serial")
 @Entity
 @DiscriminatorValue("client")
 public class Client extends Utilisateur  {
-	
+
 
     // ATTRIBUTS
 
@@ -57,11 +51,11 @@ public class Client extends Utilisateur  {
 
         this.panier.setClient( this );
         this.favoris.setClient( this );
-  		
+
   	}
 
-    
-    
+
+
     // GETTERS SETTERS
 
     public Panier getPanier() {
@@ -80,5 +74,5 @@ public class Client extends Utilisateur  {
 	public void setFavoris(Favoris favoris) {
 		this.favoris = favoris;
 	}
-    
+
 }
