@@ -67,11 +67,11 @@ public class Client extends Utilisateur  {
     }
 
 
-	public Favoris getFavoris() {
+	  public Favoris getFavoris() {
 		return favoris;
 	}
 
-	public void setFavoris(Favoris favoris) {
+	  public void setFavoris(Favoris favoris) {
 		this.favoris = favoris;
 	}
 
